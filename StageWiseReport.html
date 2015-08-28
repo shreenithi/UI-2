@@ -12,7 +12,7 @@
     <link href="css/MenuFlyoutCss.css" rel="stylesheet">
     <link href="css/table.css" rel="stylesheet">
     <link href="css/CheckBox.css" rel="stylesheet">
-
+    
   </head>
 
   <body>
@@ -127,11 +127,31 @@
           <div id='content' style="top:200px">
             Table here
             <div style="padding: 10px;">
-            <table class="TFtable">
-              <tr><th>Text</th><th>Text</th><th>Text</th></tr>
-              <tr><td>Text</td><td>Text</td><td>Text</td></tr>
-              <tr><td>Text</td><td>Text</td><td>Text</td></tr>
-              <tr><td>Text</td><td>Text</td><td>Text</td></tr>
+            <table id="export" class="TFtable">
+              <thead>
+                <tr>
+                  <th>Text</th>
+                  <th>Text1</th>
+                  <th>Text2</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Text</td>
+                  <td>Text</td>
+                  <td>Text</td>
+                </tr>
+                <tr>
+                  <td>Text</td>
+                  <td>Text</td>
+                  <td>Text</td>
+                </tr>
+                <tr>
+                  <td>Text</td>
+                  <td>Text</td>
+                  <td>Text</td>
+                </tr>
+              </tbody>
             </table>
           </div>
           </div>
@@ -140,6 +160,15 @@
       </div>
     </div>
     
+    <script type="text/javascript" src="js/jquery-latest.js"></script> 
+    <script type="text/javascript" src="js/jquery.tablesorter.js"></script> 
+    <script type="text/javascript">
+      $(document).ready(function() 
+        { 
+          $("#export").tablesorter(); 
+        } 
+      ); 
+    </script>
   
   </body>
 </html>
